@@ -1,0 +1,1194 @@
+{
+	"swagger": "2.0",
+	"schemes" : ["https"],
+	"host": "developers.nonghyup.com",
+	"tags": [
+		{
+			"name": "5.P2P금융"
+		}
+	],
+	"paths": {
+		"/P2PNVirtualAccountNumberRequest.nh": {
+			"post": {
+				"tags": [
+					"5.P2P금융"
+				],
+				"summary": "투자금관리용 가상계좌발급",
+				"description": "P2P 투자금 관리용 가상계좌를 발급한다.",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"in": "body",
+						"name": "param",
+						"description": "param",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/P2PNVirtualAccountNumberRequestRequestData"
+						}
+					}
+				],
+				"responses": {
+					
+				},
+				"deprecated": false
+			}
+		},
+		"/P2PNAccountReceiveInformationList.nh": {
+			"post": {
+				"tags": [
+					"5.P2P금융"
+				],
+				"summary": "입금확인 목록조회",
+				"description": "입력한 기간의 가상계좌 예치 내역 및 현재 사용가능 예치금과 당일 입금된 예치금을 조회한다.",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"in": "body",
+						"name": "param",
+						"description": "param",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/P2PNAccountReceiveInformationListRequestData"
+						}
+					}
+				],
+				"responses": {
+					
+				},
+				"deprecated": false
+			}
+		},
+		"/P2PNInvestmentPaymentOrder.nh": {
+			"post": {
+				"tags": [
+					"5.P2P금융"
+				],
+				"summary": "투자금 지급지시",
+				"description": "투자금 모집 완료 후 차입자에게 대출을 시행한다.",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"in": "body",
+						"name": "param",
+						"description": "param",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/P2PNInvestmentPaymentOrderRequestData"
+						}
+					}
+				],
+				"responses": {
+					
+				},
+				"deprecated": false
+			}
+		},
+		"/P2PNInvestmentLoanExecutionResultInquiry.nh": {
+			"post": {
+				"tags": [
+					"5.P2P금융"
+				],
+				"summary": "투자금지급결과조회",
+				"description": "투자금 지급에 대한 처리결과를 확인한다.",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"in": "body",
+						"name": "param",
+						"description": "param",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/P2PNInvestmentLoanExecutionResultInquiryRequestData"
+						}
+					}
+				],
+				"responses": {
+					
+				},
+				"deprecated": false
+			}
+		},
+		"/P2PNInterestRepayment.nh": {
+			"post": {
+				"tags": [
+					"5.P2P금융"
+				],
+				"summary": "원리금상환",
+				"description": "차입자 원리금 상환 시 상환금을 예치 계좌로 입금한다.",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"in": "body",
+						"name": "param",
+						"description": "param",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/P2PNInterestRepaymentRequestData"
+						}
+					}
+				],
+				"responses": {
+					
+				},
+				"deprecated": false
+			}
+		},
+		"/P2PNInterestPaymentAccountReceiveResultConfirmation.nh": {
+			"post": {
+				"tags": [
+					"5.P2P금융"
+				],
+				"summary": "원리금 입금결과조회",
+				"description": "원리금 상환에 대한 처리결과를 확인한다.",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"in": "body",
+						"name": "param",
+						"description": "param",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/P2PNInterestPaymentAccountReceiveResultConfirmationRequestData"
+						}
+					}
+				],
+				"responses": {
+					
+				},
+				"deprecated": false
+			}
+		},
+		"/P2PNInvestmentDepositAmountReturn.nh": {
+			"post": {
+				"tags": [
+					"5.P2P금융"
+				],
+				"summary": "투자예치금 반환요청",
+				"description": "투자자가 예치한 금액을 반환한다.",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"in": "body",
+						"name": "param",
+						"description": "param",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/P2PNInvestmentDepositAmountReturnRequestData"
+						}
+					}
+				],
+				"responses": {
+					
+				},
+				"deprecated": false
+			}
+		},
+		"/P2PNInvestmentDepositAmountReturnResultList.nh": {
+			"post": {
+				"tags": [
+					"5.P2P금융"
+				],
+				"summary": "투자금예치금 반환결과조회",
+				"description": "투자예치금 반환 결과를 조회한다.",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"in": "body",
+						"name": "param",
+						"description": "param",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/P2PNInvestmentDepositAmountReturnResultListRequestData"
+						}
+					}
+				],
+				"responses": {
+					
+				},
+				"deprecated": false
+			}
+		}
+	},
+	"definitions": {
+		"P2PNInvestmentDepositAmountReturnResultListRequestData": {
+			"type": "object",
+			"required": [
+				"Header",
+				"P2pCmtmNo",
+				"ChidSqno",
+				"Vran",
+				"OrtrYmd",
+				"OrtrIsTuno"
+			],
+			"properties": {
+				"Header": {
+					"$ref": "#/definitions/P2PNInvestmentDepositAmountReturnResultListHeader"
+				},
+				"P2pCmtmNo": {
+					"type": "string",
+					"example": "0000000000",
+					"description": "P2P약정번호"
+				},
+				"ChidSqno": {
+					"type": "string",
+					"example": "0000000000",
+					"description": "자회사일련번호"
+				},
+				"Vran": {
+					"type": "string",
+					"example": "가상계좌번호",
+					"description": "가상계좌번호"
+				},
+				"OrtrYmd": {
+					"type": "string",
+					"example": "원거래일자",
+					"description": "원거래일자"
+				},
+				"OrtrIsTuno": {
+					"type": "string",
+					"example": "원거래기관거래고유번호",
+					"description": "원거래기관거래고유번호"
+				}
+			},
+			"title": "P2PNInvestmentDepositAmountReturnResultListRequestData"
+		},
+		"P2PNInvestmentDepositAmountReturnRequestData": {
+			"type": "object",
+			"required": [
+				"Header",
+				"P2pCmtmNo",
+				"ChidSqno",
+				"Vran",
+				"RtnAmt",
+				"Bncd",
+				"Dpnm",
+				"IvstrAcct",
+				"MractOtlt"
+			],
+			"properties": {
+				"Header": {
+					"$ref": "#/definitions/P2PNInvestmentDepositAmountReturnHeader"
+				},
+				"P2pCmtmNo": {
+					"type": "string",
+					"example": "0000000000",
+					"description": "P2P약정번호"
+				},
+				"ChidSqno": {
+					"type": "string",
+					"example": "0000000000",
+					"description": "자회사일련번호"
+				},
+				"Vran": {
+					"type": "string",
+					"example": "가상계좌번호",
+					"description": "가상계좌번호"
+				},
+				"RtnAmt": {
+					"type": "string",
+					"example": "반환금액",
+					"description": "반환금액"
+				},
+				"Bncd": {
+					"type": "string",
+					"example": "은행코드",
+					"description": "은행코드"
+				},
+				"Dpnm": {
+					"type": "string",
+					"example": "예금주명",
+					"description": "예금주명"
+				},
+				"IvstrAcct": {
+					"type": "string",
+					"example": "투자자계좌번호",
+					"description": "투자자계좌번호"
+				},
+				"MractOtlt": {
+					"type": "string",
+					"example": "입금계좌인자내용",
+					"description": "입금계좌인자내용"
+				}
+			},
+			"title": "P2PNInvestmentDepositAmountReturnRequestData"
+		},
+		"P2PNInterestPaymentAccountReceiveResultConfirmationRequestData": {
+			"type": "object",
+			"required": [
+				"Header",
+				"P2pCmtmNo",
+				"ChidSqno",
+				"LoanNo",
+				"OrtrYmd",
+				"OrtrIsTuno"
+			],
+			"properties": {
+				"Header": {
+					"$ref": "#/definitions/P2PNInterestPaymentAccountReceiveResultConfirmationHeader"
+				},
+				"P2pCmtmNo": {
+					"type": "string",
+					"example": "0000000000",
+					"description": "P2P약정번호"
+				},
+				"ChidSqno": {
+					"type": "string",
+					"example": "0000000000",
+					"description": "자회사일련번호"
+				},
+				"LoanNo": {
+					"type": "string",
+					"example": "대출번호",
+					"description": "대출번호"
+				},
+				"OrtrYmd": {
+					"type": "string",
+					"example": "원거래일자",
+					"description": "원거래일자"
+				},
+				"OrtrIsTuno": {
+					"type": "string",
+					"example": "원거래기관거래고유번호",
+					"description": "원거래기관거래고유번호"
+				}
+			},
+			"title": "P2PNInterestPaymentAccountReceiveResultConfirmationRequestData"
+		},
+		"P2PNInterestRepaymentRequestData": {
+			"type": "object",
+			"required": [
+				"Header",
+				"P2pCmtmNo",
+				"ChidSqno",
+				"LoanNo",
+				"Vran",
+				"RpaySumAmt",
+				"RpayYmd",
+				"DractOtlt",
+				"MractOtlt",
+				"Rec"
+			],
+			"properties": {
+				"Header": {
+					"$ref": "#/definitions/P2PNInterestRepaymentHeader"
+				},
+				"P2pCmtmNo": {
+					"type": "string",
+					"example": "0000000000",
+					"description": "P2P약정번호"
+				},
+				"ChidSqno": {
+					"type": "string",
+					"example": "0000000000",
+					"description": "자회사일련번호"
+				},
+				"LoanNo": {
+					"type": "string",
+					"example": "대출번호",
+					"description": "대출번호"
+				},
+				"Vran": {
+					"type": "string",
+					"example": "계좌번호",
+					"description": "계좌번호"
+				},
+				"RpaySumAmt": {
+					"type": "string",
+					"example": "상환합계금액",
+					"description": "상환합계금액"
+				},
+				"RpayYmd": {
+					"type": "string",
+					"example": "상환일자",
+					"description": "상환일자"
+				},
+				"DractOtlt": {
+					"type": "string",
+					"example": "출금계좌인자내용",
+					"description": "출금계좌인자내용"
+				},
+				"MractOtlt": {
+					"type": "string",
+					"example": "입금계좌인자내용",
+					"description": "입금계좌인자내용"
+				},
+				"Rec": {
+					"$ref": "#/components/P2PNInterestRepaymentRec"
+				}
+			},
+			"title": "P2PNInterestRepaymentRequestData"
+		},
+		"P2PNInvestmentLoanExecutionResultInquiryRequestData": {
+			"type": "object",
+			"required": [
+				"Header",
+				"P2pCmtmNo",
+				"ChidSqno",
+				"LoanNo",
+				"OrtrYmd",
+				"OrtrIsTuno"
+			],
+			"properties": {
+				"Header": {
+					"$ref": "#/definitions/P2PNInvestmentLoanExecutionResultInquiryHeader"
+				},
+				"P2pCmtmNo": {
+					"type": "string",
+					"example": "0000000000",
+					"description": "P2P약정번호"
+				},
+				"ChidSqno": {
+					"type": "string",
+					"example": "0000000000",
+					"description": "자회사일련번호"
+				},
+				"LoanNo": {
+					"type": "string",
+					"example": "대출번호",
+					"description": "대출번호"
+				},
+				"OrtrYmd": {
+					"type": "string",
+					"example": "원거래일자",
+					"description": "원거래일자"
+				},
+				"OrtrIsTuno": {
+					"type": "string",
+					"example": "원거래기관거래고유번호",
+					"description": "원거래기관거래고유번호"
+				}
+			},
+			"title": "P2PNInvestmentLoanExecutionResultInquiryRequestData"
+		},
+		"P2PNInvestmentPaymentOrderRequestData": {
+			"type": "object",
+			"required": [
+				"Header",
+				"P2pCmtmNo",
+				"ChidSqno",
+				"SlctAmt",
+				"LonTrm",
+				"InvSumAmt",
+				"NewTrnsYn",
+				"LoanNo",
+				"Bncd",
+				"BrwAcno",
+				"Dpnm",
+				"LonApcYmd",
+				"DractOtlt",
+				"MractOtlt",
+				"Rec"
+			],
+			"properties": {
+				"Header": {
+					"$ref": "#/definitions/P2PNInvestmentPaymentOrderHeader"
+				},
+				"P2pCmtmNo": {
+					"type": "string",
+					"example": "0000000000",
+					"description": "P2P약정번호"
+				},
+				"ChidSqno": {
+					"type": "string",
+					"example": "0000000000",
+					"description": "자회사일련번호"
+				},
+				"SlctAmt": {
+					"type": "string",
+					"example": "모집금액",
+					"description": "모집금액"
+				},
+				"LonTrm": {
+					"type": "string",
+					"example": "대출기간",
+					"description": "대출기간"
+				},
+				"InvSumAmt": {
+					"type": "string",
+					"example": "투자합계금액",
+					"description": "투자합계금액"
+				},
+				"NewTrnsYn": {
+					"type": "string",
+					"example": "Y",
+					"description": "신규거래여부"
+				},
+				"LoanNo": {
+					"type": "string",
+					"example": "대출번호",
+					"description": "대출번호"
+				},
+				"Bncd": {
+					"type": "string",
+					"example": "은행코드",
+					"description": "은행코드"
+				},
+				"BrwAcno": {
+					"type": "string",
+					"example": "차입자계좌번호",
+					"description": "차입자계좌번호"
+				},
+				"Dpnm": {
+					"type": "string",
+					"example": "예금주명",
+					"description": "예금주명"
+				},
+				"LonApcYmd": {
+					"type": "string",
+					"example": "대출신청일자",
+					"description": "대출신청일자"
+				},
+				"DractOtlt": {
+					"type": "string",
+					"example": "출금계좌인자내용",
+					"description": "출금계좌인자내용"
+				},
+				"MractOtlt": {
+					"type": "string",
+					"example": "입금계좌인자내용",
+					"description": "입금계좌인자내용"
+				},
+				"Rec": {
+					"$ref": "#/components/P2PNInvestmentPaymentOrderRec"
+				}
+			},
+			"title": "P2PNInvestmentPaymentOrderRequestData"
+		},
+		"P2PNAccountReceiveInformationListRequestData": {
+			"type": "object",
+			"required": [
+				"Header",
+				"P2pCmtmNo",
+				"ChidSqno",
+				"Vran",
+				"Iqds",
+				"Insymd",
+				"Ineymd",
+				"PageNo"
+			],
+			"properties": {
+				"Header": {
+					"$ref": "#/definitions/P2PNAccountReceiveInformationListHeader"
+				},
+				"P2pCmtmNo": {
+					"type": "string",
+					"example": "0000000000",
+					"description": "P2P약정번호"
+				},
+				"ChidSqno": {
+					"type": "string",
+					"example": "0000000000",
+					"description": "자회사일련번호"
+				},
+				"Vran": {
+					"type": "string",
+					"example": "가상계좌번호",
+					"description": "가상계좌번호"
+				},
+				"Iqds": {
+					"type": "string",
+					"example": "1",
+					"description": "조회구분"
+				},
+				"Insymd": {
+					"type": "string",
+					"example": "조회시작일자",
+					"description": "조회시작일자"
+				},
+				"Ineymd": {
+					"type": "string",
+					"example": "조회종료일자",
+					"description": "조회종료일자"
+				},
+				"PageNo": {
+					"type": "string",
+					"example": "1",
+					"description": "페이지번호"
+				}
+			},
+			"title": "P2PNAccountReceiveInformationListRequestData"
+		},
+		"P2PNVirtualAccountNumberRequestRequestData": {
+			"type": "object",
+			"required": [
+				"Header",
+				"P2PCmtmNo",
+				"ChidSqno",
+				"P2PVractUsg",
+				"InvstBrwNm"
+			],
+			"properties": {
+				"Header": {
+					"$ref": "#/definitions/P2PNVirtualAccountNumberRequestHeader"
+				},
+				"P2PCmtmNo": {
+					"type": "string",
+					"example": "0000000000",
+					"description": "P2P약정번호"
+				},
+				"ChidSqno": {
+					"type": "string",
+					"example": "0000000000",
+					"description": "자회사일련번호"
+				},
+				"P2PVractUsg": {
+					"type": "string",
+					"example": "1",
+					"description": "P2P가상좌구분"
+				},
+				"InvstBrwNm": {
+					"type": "string",
+					"example": "예금주명",
+					"description": "투자자명"
+				}
+			},
+			"title": "P2PNVirtualAccountNumberRequestRequestData"
+		},
+		"P2PNVirtualAccountNumberRequestHeader": {
+			"type": "object",
+			"required": [
+				"AccessToken",
+				"ApiNm",
+				"ApiSvcCd",
+				"FintechApsno",
+				"IsTuno",
+				"Iscd",
+				"Trtm",
+				"Tsymd"
+			],
+			"properties": {
+				"ApiNm": {
+					"type": "string",
+					"example": "P2PNVirtualAccountNumberRequest",
+					"description": "API명"
+				},
+				"Tsymd": {
+					"type": "string",
+					"example": "오늘날짜를입력하세요",
+					"description": "전송일자"
+				},
+				"Trtm": {
+					"type": "string",
+					"example": "112428",
+					"description": "전송시각"
+				},
+				"Iscd": {
+					"type": "string",
+					"example": "기관코드를입력하세요",
+					"description": "기관코드"
+				},
+				"FintechApsno": {
+					"type": "string",
+					"example": "001",
+					"description": "핀테크앱일련번호"
+				},
+				"ApiSvcCd": {
+					"type": "string",
+					"example": "13E_001_00",
+					"description": "API 서비스코드"
+				},
+				"IsTuno": {
+					"type": "string",
+					"example": "0000",
+					"description": "기관 거래고유번호"
+				},
+				"AccessToken": {
+					"type": "string",
+					"example": "인증키를입력하세요",
+					"description": "접근토큰"
+				}
+			},
+			"title": "P2PNVirtualAccountNumberRequestHeader",
+			"description": "공통부"
+		},
+		"P2PNAccountReceiveInformationListHeader": {
+			"type": "object",
+			"required": [
+				"AccessToken",
+				"ApiNm",
+				"ApiSvcCd",
+				"FintechApsno",
+				"IsTuno",
+				"Iscd",
+				"Trtm",
+				"Tsymd"
+			],
+			"properties": {
+				"ApiNm": {
+					"type": "string",
+					"example": "P2PNAccountReceiveInformationList",
+					"description": "API명"
+				},
+				"Tsymd": {
+					"type": "string",
+					"example": "오늘날짜를입력하세요",
+					"description": "전송일자"
+				},
+				"Trtm": {
+					"type": "string",
+					"example": "112428",
+					"description": "전송시각"
+				},
+				"Iscd": {
+					"type": "string",
+					"example": "기관코드를입력하세요",
+					"description": "기관코드"
+				},
+				"FintechApsno": {
+					"type": "string",
+					"example": "001",
+					"description": "핀테크앱일련번호"
+				},
+				"ApiSvcCd": {
+					"type": "string",
+					"example": "13E_001_00",
+					"description": "API 서비스코드"
+				},
+				"IsTuno": {
+					"type": "string",
+					"example": "0000",
+					"description": "기관 거래고유번호"
+				},
+				"AccessToken": {
+					"type": "string",
+					"example": "인증키를입력하세요",
+					"description": "접근토큰"
+				}
+			},
+			"title": "P2PNAccountReceiveInformationListHeader",
+			"description": "공통부"
+		},
+		"P2PNInvestmentLoanExecutionResultInquiryHeader": {
+			"type": "object",
+			"required": [
+				"AccessToken",
+				"ApiNm",
+				"ApiSvcCd",
+				"FintechApsno",
+				"IsTuno",
+				"Iscd",
+				"Trtm",
+				"Tsymd"
+			],
+			"properties": {
+				"ApiNm": {
+					"type": "string",
+					"example": "P2PNInvestmentLoanExecutionResultInquiry",
+					"description": "API명"
+				},
+				"Tsymd": {
+					"type": "string",
+					"example": "오늘날짜를입력하세요",
+					"description": "전송일자"
+				},
+				"Trtm": {
+					"type": "string",
+					"example": "112428",
+					"description": "전송시각"
+				},
+				"Iscd": {
+					"type": "string",
+					"example": "기관코드를입력하세요",
+					"description": "기관코드"
+				},
+				"FintechApsno": {
+					"type": "string",
+					"example": "001",
+					"description": "핀테크앱일련번호"
+				},
+				"ApiSvcCd": {
+					"type": "string",
+					"example": "13E_001_00",
+					"description": "API 서비스코드"
+				},
+				"IsTuno": {
+					"type": "string",
+					"example": "0000",
+					"description": "기관 거래고유번호"
+				},
+				"AccessToken": {
+					"type": "string",
+					"example": "인증키를입력하세요",
+					"description": "접근토큰"
+				}
+			},
+			"title": "P2PNInvestmentLoanExecutionResultInquiryHeader",
+			"description": "공통부"
+		},
+		"P2PNInvestmentPaymentOrderHeader": {
+			"type": "object",
+			"required": [
+				"AccessToken",
+				"ApiNm",
+				"ApiSvcCd",
+				"FintechApsno",
+				"IsTuno",
+				"Iscd",
+				"Trtm",
+				"Tsymd"
+			],
+			"properties": {
+				"ApiNm": {
+					"type": "string",
+					"example": "P2PNInvestmentPaymentOrder",
+					"description": "API명"
+				},
+				"Tsymd": {
+					"type": "string",
+					"example": "오늘날짜를입력하세요",
+					"description": "전송일자"
+				},
+				"Trtm": {
+					"type": "string",
+					"example": "112428",
+					"description": "전송시각"
+				},
+				"Iscd": {
+					"type": "string",
+					"example": "기관코드를입력하세요",
+					"description": "기관코드"
+				},
+				"FintechApsno": {
+					"type": "string",
+					"example": "001",
+					"description": "핀테크앱일련번호"
+				},
+				"ApiSvcCd": {
+					"type": "string",
+					"example": "13E_001_00",
+					"description": "API 서비스코드"
+				},
+				"IsTuno": {
+					"type": "string",
+					"example": "0000",
+					"description": "기관 거래고유번호"
+				},
+				"AccessToken": {
+					"type": "string",
+					"example": "인증키를입력하세요",
+					"description": "접근토큰"
+				}
+			},
+			"title": "P2PNInvestmentPaymentOrderHeader",
+			"description": "공통부"
+		},
+		"P2PNInterestRepaymentHeader": {
+			"type": "object",
+			"required": [
+				"AccessToken",
+				"ApiNm",
+				"ApiSvcCd",
+				"FintechApsno",
+				"IsTuno",
+				"Iscd",
+				"Trtm",
+				"Tsymd"
+			],
+			"properties": {
+				"ApiNm": {
+					"type": "string",
+					"example": "P2PNInterestRepayment",
+					"description": "API명"
+				},
+				"Tsymd": {
+					"type": "string",
+					"example": "오늘날짜를입력하세요",
+					"description": "전송일자"
+				},
+				"Trtm": {
+					"type": "string",
+					"example": "112428",
+					"description": "전송시각"
+				},
+				"Iscd": {
+					"type": "string",
+					"example": "기관코드를입력하세요",
+					"description": "기관코드"
+				},
+				"FintechApsno": {
+					"type": "string",
+					"example": "001",
+					"description": "핀테크앱일련번호"
+				},
+				"ApiSvcCd": {
+					"type": "string",
+					"example": "13E_001_00",
+					"description": "API 서비스코드"
+				},
+				"IsTuno": {
+					"type": "string",
+					"example": "0000",
+					"description": "기관 거래고유번호"
+				},
+				"AccessToken": {
+					"type": "string",
+					"example": "인증키를입력하세요",
+					"description": "접근토큰"
+				}
+			},
+			"title": "P2PNInterestRepaymentHeader",
+			"description": "공통부"
+		},
+		"P2PNInterestPaymentAccountReceiveResultConfirmationHeader": {
+			"type": "object",
+			"required": [
+				"AccessToken",
+				"ApiNm",
+				"ApiSvcCd",
+				"FintechApsno",
+				"IsTuno",
+				"Iscd",
+				"Trtm",
+				"Tsymd"
+			],
+			"properties": {
+				"ApiNm": {
+					"type": "string",
+					"example": "P2PNInterestPaymentAccountReceiveResultConfirmation",
+					"description": "API명"
+				},
+				"Tsymd": {
+					"type": "string",
+					"example": "오늘날짜를입력하세요",
+					"description": "전송일자"
+				},
+				"Trtm": {
+					"type": "string",
+					"example": "112428",
+					"description": "전송시각"
+				},
+				"Iscd": {
+					"type": "string",
+					"example": "기관코드를입력하세요",
+					"description": "기관코드"
+				},
+				"FintechApsno": {
+					"type": "string",
+					"example": "001",
+					"description": "핀테크앱일련번호"
+				},
+				"ApiSvcCd": {
+					"type": "string",
+					"example": "13E_001_00",
+					"description": "API 서비스코드"
+				},
+				"IsTuno": {
+					"type": "string",
+					"example": "0000",
+					"description": "기관 거래고유번호"
+				},
+				"AccessToken": {
+					"type": "string",
+					"example": "인증키를입력하세요",
+					"description": "접근토큰"
+				}
+			},
+			"title": "P2PNInterestPaymentAccountReceiveResultConfirmationHeader",
+			"description": "공통부"
+		},
+		"P2PNInvestmentDepositAmountReturnHeader": {
+			"type": "object",
+			"required": [
+				"AccessToken",
+				"ApiNm",
+				"ApiSvcCd",
+				"FintechApsno",
+				"IsTuno",
+				"Iscd",
+				"Trtm",
+				"Tsymd"
+			],
+			"properties": {
+				"ApiNm": {
+					"type": "string",
+					"example": "P2PNInvestmentDepositAmountReturn",
+					"description": "API명"
+				},
+				"Tsymd": {
+					"type": "string",
+					"example": "오늘날짜를입력하세요",
+					"description": "전송일자"
+				},
+				"Trtm": {
+					"type": "string",
+					"example": "112428",
+					"description": "전송시각"
+				},
+				"Iscd": {
+					"type": "string",
+					"example": "기관코드를입력하세요",
+					"description": "기관코드"
+				},
+				"FintechApsno": {
+					"type": "string",
+					"example": "001",
+					"description": "핀테크앱일련번호"
+				},
+				"ApiSvcCd": {
+					"type": "string",
+					"example": "13E_001_00",
+					"description": "API 서비스코드"
+				},
+				"IsTuno": {
+					"type": "string",
+					"example": "0000",
+					"description": "기관 거래고유번호"
+				},
+				"AccessToken": {
+					"type": "string",
+					"example": "인증키를입력하세요",
+					"description": "접근토큰"
+				}
+			},
+			"title": "P2PNInvestmentDepositAmountReturnHeader",
+			"description": "공통부"
+		},
+		"P2PNInvestmentDepositAmountReturnResultListHeader": {
+			"type": "object",
+			"required": [
+				"AccessToken",
+				"ApiNm",
+				"ApiSvcCd",
+				"FintechApsno",
+				"IsTuno",
+				"Iscd",
+				"Trtm",
+				"Tsymd"
+			],
+			"properties": {
+				"ApiNm": {
+					"type": "string",
+					"example": "P2PNInvestmentDepositAmountReturnResultList",
+					"description": "API명"
+				},
+				"Tsymd": {
+					"type": "string",
+					"example": "오늘날짜를입력하세요",
+					"description": "전송일자"
+				},
+				"Trtm": {
+					"type": "string",
+					"example": "112428",
+					"description": "전송시각"
+				},
+				"Iscd": {
+					"type": "string",
+					"example": "기관코드를입력하세요",
+					"description": "기관코드"
+				},
+				"FintechApsno": {
+					"type": "string",
+					"example": "001",
+					"description": "핀테크앱일련번호"
+				},
+				"ApiSvcCd": {
+					"type": "string",
+					"example": "13E_001_00",
+					"description": "API 서비스코드"
+				},
+				"IsTuno": {
+					"type": "string",
+					"example": "0000",
+					"description": "기관 거래고유번호"
+				},
+				"AccessToken": {
+					"type": "string",
+					"example": "인증키를입력하세요",
+					"description": "접근토큰"
+				}
+			},
+			"title": "P2PNInvestmentDepositAmountReturnResultListHeader",
+			"description": "공통부"
+		}
+	},
+	"components": {
+		"P2PNInvestmentPaymentOrderRec": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"required": [
+					"Vran",
+					"InvAmt"
+				],
+				"properties": {
+					"Vran": {
+						"type": "string",
+						"example": "가상계좌번호",
+						"description": "가상계좌번호"
+					},
+					"InvAmt": {
+						"type": "string",
+						"example": "투자금액",
+						"description": "투자금액"
+					}
+				},
+				"title": "P2PNInvestmentPaymentOrderRec",
+				"description": "반복부"
+			}
+		},
+		"P2PNInterestRepaymentRec": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"required": [
+					"Vran",
+					"RpayAmt"
+				],
+				"properties": {
+					"Vran": {
+						"type": "string",
+						"example": "가상계좌번호",
+						"description": "가상계좌번호"
+					},
+					"RpayAmt": {
+						"type": "string",
+						"example": "상환금액",
+						"description": "상환금액"
+					}
+				},
+				"title": "P2PNInterestRepaymentRec",
+				"description": "반복부"
+			}
+		}		
+	}
+}
